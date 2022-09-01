@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--AOS link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Css link-->
+    <link rel="stylesheet" href="./style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <nav class="navbar">
+        <div class="logo" data-aos="fade-down" data-aos-duration="1000" data-aos-mirror="true">
+            <img src="./images/Logo.png">
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            </div>
+            <ul class="nav-links" data-aos="fade-down" data-aos-duration="1000" data-aos-mirror="true">
+                <li><a href="#">Search for services</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    </nav>
+    <!--Header-->
+    <header class="header">
+        <div class="header-left">
+            <div class="header-first-text" data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true"> 
+            <h1>Tired of wading through<br>thousands of online reviews<br>just to find a good plumber</h1>
+        </div>
+        <div class="header-second-text" data-aos="fade-right" data-aos-duration="1000" data-aos-mirror="true">
+            <h3>Here's a list of East businesses<br>people on online review sites</h3>
+        </div>
+        <div class="search-area" data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true">
+            <h3>Find the professional you need in 1 minute</h3>
+            <form>
+                <label for="where">Where</label>
+                <input type="text" placeholder="Oakland" id="where">
+                <label for="service">Service?</label>
+                <input type="text" placeholder="Plumber" id="service">
+                <button type="button" id="find-btn">Find</button>
+            </form>
+        </div>
+        </div>
+        <div class="header-right" data-aos="fade-left" data-aos-duration="1000" data-aos-mirror="true">
+            <img src="./images/header.svg">
+        </div>
+    </header>
+    <!--JavaScript link-->
+    <script src="./script.js"></script>
+    <!--Aos JavaScript link-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
