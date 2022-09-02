@@ -336,6 +336,71 @@ input[type="text"]::placeholder {
     list-style-type: none;
 }
 
+/* Section review */
+.review .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.image-text img {
+    width: 20rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.image-text h3 {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.icon-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    margin-bottom: 4rem;
+}
+
+.icon-area p {
+    text-align: center;
+}
+
+.icon-area i {
+    font-size: 2rem;
+    color: #5b78c7;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem;
+    background: #EDEDED;
+    border-radius: 1rem;
+}
+
+.row-1 {
+    display: flex;
+    gap: 1.7rem;
+}
+
+.row-2 {
+    display: flex;
+    gap: 1.7rem;
+}
+
+.row-3 {
+    display: flex;
+    gap: 1.7rem;
+}
+
 /* Media query for header */
 @media (max-width: 1250px) {
     .header {
@@ -519,6 +584,55 @@ input[type="text"]::placeholder {
     }
 }
 
+/*  Media query for report review section */
+@media (max-width: 1290px) {
+    .icon:nth-of-type(6) {
+        display: none;
+    }
+}
+
+@media (max-width: 1060px) {
+    .icon:nth-of-type(5) {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .icon:nth-of-type(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 630px) {
+    .icon:nth-of-type(3) {
+        display: none;
+    }
+
+    .icon-area {
+        gap: 1rem;
+    }
+
+    .row-1 {
+        gap: 1rem;
+    }
+    
+    .row-2 {
+        gap: 1rem;
+    }
+    
+    .row-3 {
+        gap: 1rem;
+    }
+
+    
+    .icon {
+        padding: 1.4rem 3.4rem;
+    }
+
+    .image-text h3 {
+        font-size: 0.85rem;
+    }
+}
 /* Webkit to hide scrollbar */
 ::-webkit-scrollbar {
     display: none;
