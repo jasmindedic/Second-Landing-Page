@@ -210,6 +210,132 @@ input[type="text"]::placeholder {
     }
 }
 
+/* Section report card */
+.report-card {
+    width: 100vw;
+    background-color: #d2dae2;
+}
+
+.report-card .container {
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding-bottom: 2rem;
+}
+
+.headliner h1 {
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.headliner h3 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.text-card {
+    display: flex;
+}
+
+.card-text {
+    margin-right: 6.5rem;
+    width: 30rem;
+}
+
+.card {
+    min-width: 315px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    border-color: #34e7e4;
+    box-shadow: 5px 6px #4bcffa;
+    border-radius: 0.6rem;
+    margin-left: 6.5rem;
+}
+
+.card-logo {
+    background: #34e7e4;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-logo h3 {
+    font-size: 1rem;
+    margin-right: 0.8rem;
+}
+
+.card .title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card-logo img {
+    width: 6rem;
+}
+
+.card .yelp {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    position: relative;
+}
+
+.card .yelp ul {
+    position: absolute;
+    left: 10rem;
+}
+
+.card .google {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    position: relative;
+}
+
+.card .google ul {
+    position: absolute;
+    left: 10rem;
+}
+
+.card .nextDoor {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    position: relative;
+}
+
+.card .nextDoor ul {
+    position: absolute;
+    left: 10rem;
+}
+
+.report-text {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.card ul {
+    display: flex;
+    
+}
+
+.card ul li {
+    list-style-type: none;
+}
+
 /* Media query for header */
 @media (max-width: 1250px) {
     .header {
@@ -241,7 +367,9 @@ input[type="text"]::placeholder {
 }
 
 @media (max-width: 698px) {
+    
     .header-first-text {
+        margin-top: 2rem;
         margin-bottom: 2rem;
         font-size: 0.8rem;
     }
@@ -337,3 +465,4 @@ input[type="text"]::placeholder {
 ::-webkit-scrollbar {
     display: none;
 }
+
