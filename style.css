@@ -460,6 +460,64 @@ input[type="text"]::placeholder {
    
 }
 
+/* Media query for report card section */
+@media (max-width: 1040px) {
+    .text-card {
+        flex-direction: column;
+    }
+
+    .card-text {
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    
+    .card {
+        
+        margin-left: 0;
+    }
+
+    .headliner h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 520px) {
+    
+    .card-text {
+        width: 25rem;
+    }
+    
+    .card {
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .card-text {
+        width: 22rem;
+    }
+    
+    .card {
+        min-width: 280px;
+    }
+
+    .card .yelp ul {
+        position: absolute;
+        left: 8rem;
+    }
+    
+    .card .google ul {
+        position: absolute;
+        left: 8rem;
+    }
+    
+    .card .nextDoor ul {
+        position: absolute;
+        left: 8rem;
+    }
+}
 
 /* Webkit to hide scrollbar */
 ::-webkit-scrollbar {
