@@ -384,6 +384,7 @@ input[type="text"]::placeholder {
     padding: 2rem 4rem;
     background: #EDEDED;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .row-1 {
@@ -399,6 +400,56 @@ input[type="text"]::placeholder {
 .row-3 {
     display: flex;
     gap: 1.7rem;
+}
+
+/* Footer */
+.footer .container {
+    height: 20vh;
+    background-color: #67e6dc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.left-copyright {
+    margin-left: 5rem;
+}
+
+.right-copyright {
+    margin-right: 5rem;
+}
+
+.left-copyright p{
+    font-size: 1.1rem;
+}
+
+#right-icon {
+    margin-bottom: 0.2rem;
+}
+
+.footer .container ul  {
+    display: flex;
+}
+
+.footer .container ul li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.footer .container ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer .container ul li a i{
+    font-size: 2rem;
 }
 
 /* Media query for header */
@@ -633,6 +684,206 @@ input[type="text"]::placeholder {
         font-size: 0.85rem;
     }
 }
+
+/* Media queries for footer section */
+@media (min-width: 1600px) {
+    .left-copyright {
+        margin-left: 10rem;
+    }
+    
+    .right-copyright {
+        margin-right: 10rem;
+    }
+}
+
+@media (min-width: 1800px) {
+    .left-copyright {
+        margin-left: 16rem;
+    }
+    
+    .right-copyright {
+        margin-right: 16rem;
+    }
+}
+
+@media (min-width: 2000px) {
+    .left-copyright {
+        margin-left: 20rem;
+    }
+    
+    .right-copyright {
+        margin-right: 20rem;
+    }
+}
+
+@media (min-width: 2200px) {
+    .left-copyright {
+        margin-left: 24rem;
+    }
+    
+    .right-copyright {
+        margin-right: 24rem;
+    }
+}
+
+@media (min-width: 2400px) {
+    .left-copyright {
+        margin-left: 30rem;
+    }
+    
+    .right-copyright {
+        margin-right: 30rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-copyright {
+        margin: 0;
+    }
+
+    .left-copyright #right-icon {
+        margin-top: 1rem;
+    }
+    
+    .right-copyright {
+        margin: 0;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    .footer .container ul li a i{
+        font-size: 1.6rem;
+    }
+
+    .footer .container .social-media ul li {
+        padding: 0.6rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .footer .container {
+        height: 32vh;
+    }
+
+    .left-copyright p{
+        font-size: 1rem;
+    }
+
+    .right-copyright .links ul li a {
+        font-size: 0.8rem;
+    }
+}
+
+/* General media queries for mobile devices under 400px */
+@media (max-width: 400px) {
+    .header .header-first-text h1 {
+        font-size: 1.1rem;
+    }
+
+    nav {
+        height: 20vh;
+    }
+
+    .header-right img{
+        width: 15rem;
+        height: 8rem;
+    }
+}
+
+/* General media queries for mobile devices under 360px */
+@media (max-width: 360px) {
+    .search-area {
+        width: 16rem
+    }
+
+    .search-area h3{
+        font-size: 0.8rem;
+    }
+
+    .header {
+        gap: 1rem;
+    }
+
+    .header-right img{
+        width: 15rem;
+        height: 7rem;
+    }
+
+    .card-text {
+        width: 16rem;
+        margin-right: 0;
+        text-align: center;
+        margin-left: 0.5rem;
+    }
+
+    .card {
+        min-width: 265px;
+        box-shadow: 4px 5px #4bcffa;
+    }
+
+    .card ul li i {
+        font-size: 0.6rem;
+    }
+
+    .card .title {
+        font-size: 0.7rem;
+    }
+
+    .card .yelp {
+        font-size: 0.9rem;
+    }
+
+    .card .google {
+        font-size: 0.9rem;
+    }
+
+    .card .nextDoor {
+        font-size: 0.9rem;
+    }
+
+    .card .yelp ul {
+        position: absolute;
+        left: 6rem;
+    }
+
+    .card .google ul {
+        position: absolute;
+        left: 6rem;
+    }
+
+    .card .nextDoor ul {
+        position: absolute;
+        left: 6rem;
+    }
+
+    .report-text {
+        font-size: 0.9rem;
+    }
+
+    .image-text img {
+        width: 16rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .image-text h3 {
+        font-size: 0.9rem;
+    }
+
+    .icon {
+        width: 1rem;
+       
+    }
+}
+
+
 /* Webkit to hide scrollbar */
 ::-webkit-scrollbar {
     display: none;
